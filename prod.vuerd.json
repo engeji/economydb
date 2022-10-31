@@ -1,0 +1,159 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Field",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2de95bd0-8822-4bfe-98f5-e5170f09abc6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 120.8333,
+          "top": 79.1663,
+          "zIndex": 18,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "fcb8f1a7-2841-40cb-a4b3-85ae77100f1b"
+      },
+      {
+        "name": "Prod",
+        "comment": "",
+        "columns": [
+          {
+            "name": "FIELD_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "27c04715-8cb6-4ef7-87db-1e2161113ba5"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 602.4998,
+          "top": 241.6669,
+          "zIndex": 20,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bc7c5c21-62ac-4c59-ba4d-758f330e1152"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "fcb8f1a7-2841-40cb-a4b3-85ae77100f1b",
+          "columnIds": [
+            "2de95bd0-8822-4bfe-98f5-e5170f09abc6"
+          ],
+          "x": 467.8333,
+          "y": 123.9163,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "bc7c5c21-62ac-4c59-ba4d-758f330e1152",
+          "columnIds": [
+            "27c04715-8cb6-4ef7-87db-1e2161113ba5"
+          ],
+          "x": 602.4998,
+          "y": 286.4169,
+          "direction": "left"
+        },
+        "constraintName": "fk_field_to_prod",
+        "visible": true,
+        "id": "462fdf8d-8583-4c77-8af9-14fc2b76e486"
+      }
+    ]
+  }
+}
