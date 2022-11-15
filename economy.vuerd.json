@@ -154,7 +154,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 64.30903625488281,
+              "widthName": 61.2490234375,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -166,7 +166,7 @@
           "active": true,
           "left": 200,
           "top": 100,
-          "zIndex": 38,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 120
         },
