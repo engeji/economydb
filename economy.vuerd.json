@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
-    "zoomLevel": 1,
+    "scrollTop": -61.6666642162533,
+    "scrollLeft": -210.83332495556974,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -160,18 +160,1328 @@
               "widthDefault": 60
             },
             "id": "2f656c36-2c0a-498d-95dc-58ab5a3dc365"
+          },
+          {
+            "name": "fluid_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "37827fc4-578a-4b23-8562-6b09abc2171b"
+          },
+          {
+            "name": "event_ID_for_well",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 106.05712890625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8328f338-148e-48c3-8ede-f8a62ce3d646"
           }
         ],
         "ui": {
-          "active": true,
-          "left": 200,
-          "top": 100,
-          "zIndex": 1,
+          "active": false,
+          "left": 1635.2083,
+          "top": 479.9996,
+          "zIndex": 291,
           "widthName": 60,
           "widthComment": 120
         },
         "visible": true,
         "id": "5c0321e7-c2fa-459c-b89c-2f3a0b10520d"
+      },
+      {
+        "name": "fact_capacity",
+        "comment": "стоимость ГТМ",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "084803d6-08b4-43d4-b281-362382eafb1f"
+          },
+          {
+            "name": "owner_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fe739444-c3ef-4ae5-87cd-9f101f5fdb4d"
+          },
+          {
+            "name": "deposit_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8f02b18d-4fde-472a-ab17-dbca6a685ba9"
+          },
+          {
+            "name": "capacity_vlaue",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "719c86d6-04f8-43b8-9590-f04c98d017a8"
+          },
+          {
+            "name": "measers_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.1962890625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8b4b4063-04c1-4514-8812-e893185e4203"
+          },
+          {
+            "name": "mults_id",
+            "comment": "множитель для тысяч",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e6ea0f77-a8a2-43fc-86cc-09c6a4f06d14"
+          },
+          {
+            "name": "fact_date",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "734b6bb0-c12d-47be-aba4-8fee3921929e"
+          },
+          {
+            "name": "path_source",
+            "comment": "Ссылка на файл источник",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.55078125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "798a8d03-aeee-4bdb-be91-d1684544c99b"
+          },
+          {
+            "name": "memo",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a9bcb5b-45c2-4504-b38f-fd39a93e835e"
+          },
+          {
+            "name": "event_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8e1f00ec-91ff-46ab-8e8e-5ef88015b83c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 577.7085,
+          "top": 407.4998,
+          "zIndex": 286,
+          "widthName": 77.87353515625,
+          "widthComment": 93.61572265625
+        },
+        "visible": true,
+        "id": "1547a818-09c3-49aa-911f-1c7aed198217"
+      },
+      {
+        "name": "Tax_default_value",
+        "comment": "Ставки налога на имущество и прибыль",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "38932cca-fcd4-402a-b449-620d8a5bd5b0"
+          },
+          {
+            "name": "Tax_value",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ccb3a1a3-3cfb-4530-b83a-9123e24edacf"
+          },
+          {
+            "name": "tax_type_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 71.37353515625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9bd6fc82-6d8d-4ccb-a8ca-1202e1f69516"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 184.3749,
+          "top": 340.4166,
+          "zIndex": 281,
+          "widthName": 106.7998046875,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "996ee7e9-a344-403f-ba58-0f95b7a7dd17"
+      },
+      {
+        "name": "Tax_type",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c0787755-e0e9-4090-ab2a-519aa43288dd"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "30a70dd1-9a4d-4a24-9848-c99f5b8ae8ce"
+          },
+          {
+            "name": "measer_id",
+            "comment": "тут в процентах( надо дополнить справочник)",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.6962890625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "030be017-9fa2-4c0b-b288-d23a63abe10a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 90.625,
+          "top": 32.917,
+          "zIndex": 282,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "244e2101-ac6b-4e37-ae76-4ea4c5c6e7c0"
+      },
+      {
+        "name": "depreciation_period_defalut_value",
+        "comment": "Срок амартизации",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "259643e1-ee6d-4990-ae0b-fa576d3b8c64"
+          },
+          {
+            "name": "prize_depr_value",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.734375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f27a882b-595f-4b68-bc9d-a7ebc6473e05"
+          },
+          {
+            "name": "prize_depr_value_measer_id",
+            "comment": "проценты",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 169.66064453125,
+              "widthComment": 60.50634765625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a7748aca-6c59-40f6-bb6d-cb1bda347378"
+          },
+          {
+            "name": "tax_period",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5f6f018b-6d35-4a80-9c01-9fe72504f7f6"
+          },
+          {
+            "name": "accaunting_period",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 108.2470703125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5c1e65e1-1074-44ed-b052-bf398fefd13c"
+          },
+          {
+            "name": "period_measer_id",
+            "comment": "года",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 106.0634765625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e8ac66b1-c4f6-443a-b1e6-0f9d84d0edd6"
+          },
+          {
+            "name": "event_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "db11efde-7ddb-47f3-a71e-d92b04aa8b91"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 586.5043,
+          "top": 133.5649,
+          "zIndex": 285,
+          "widthName": 200.76416015625,
+          "widthComment": 113.86474609375
+        },
+        "visible": true,
+        "id": "d3cd9d65-e851-423d-8f2b-916e9c595a3b"
+      },
+      {
+        "name": "event",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "aab645d8-2ebb-4614-adb1-82cd722d25ae"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "754cc858-2b55-4601-b6ed-9878d256f838"
+          },
+          {
+            "name": "expense_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 71.3798828125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a72e5436-0c78-43f8-9aad-ec1761026ed6"
+          },
+          {
+            "name": "params",
+            "comment": "TODO",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "16836a8a-29ce-4f1c-a91d-725d1840600f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1220.8335,
+          "top": 320.0927,
+          "zIndex": 27,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0dfce4e5-4c12-4025-9b1e-86bacaf7c65a"
+      },
+      {
+        "name": "expense",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f6436bb1-099e-4dd0-844b-9782b486193e"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e02c43ca-4014-420c-99d8-e3468c090929"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1609.9999,
+          "top": 175.8333,
+          "zIndex": 290,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "28452f31-f424-4938-ab68-c70399639883"
+      },
+      {
+        "name": "fluid_sale_price",
+        "comment": "Цена реализации флюида",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8f11dddc-222a-42af-813c-6d11c5b174b0"
+          },
+          {
+            "name": "value",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "456d40ff-9f40-4978-b893-96462c2bf162"
+          },
+          {
+            "name": "fluid_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8cddc976-32e6-4a70-b08e-4c05a50edca8"
+          },
+          {
+            "name": "date",
+            "comment": "год",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d3311874-ac43-4a77-8045-9e2fcebe24dd"
+          },
+          {
+            "name": "deposit_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8c2405dc-b72f-4bdb-9576-337ce0da7106"
+          },
+          {
+            "name": "condition_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e4745a5f-2744-4576-b267-cf67e2e955ac"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 168.3331,
+          "top": 601.6669,
+          "zIndex": 248,
+          "widthName": 92.33349609375,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "f243d419-137d-4b7e-b950-1d308fec71ae"
+      },
+      {
+        "name": "fluid_sale_price_condition",
+        "comment": "Условия расчета цен реализации продукции",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9a712c90-7c28-4cfb-a243-b779922e905b"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f8dcb831-755a-4d51-8040-8012168ea432"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 90,
+          "top": 891.6666,
+          "zIndex": 194,
+          "widthName": 151.6015625,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "2b203101-d881-4c32-aaf5-40697101a646"
+      },
+      {
+        "name": "MET",
+        "comment": "mineral extraction tax (НДПИ)",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "76fe454c-dad8-4604-aefc-1859d9b28437"
+          },
+          {
+            "name": "value",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "69cb9637-07f7-4e6e-8a4b-0309353f51e5"
+          },
+          {
+            "name": "fluid_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "face5ec0-30d3-4c92-b914-395fd28a787b"
+          },
+          {
+            "name": "date",
+            "comment": "год",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c505100f-24d0-4ffd-a2da-ffe44e957c11"
+          },
+          {
+            "name": "deposit_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "17722c97-912b-4142-adf9-be17eb9b673e"
+          },
+          {
+            "name": "condition_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "670f9812-165a-4168-ae1c-cf8d10959f7f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 776.6667,
+          "top": 841.6665,
+          "zIndex": 272,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "60068242-8e5c-4204-8bd2-5314b9c80d9e"
+      },
+      {
+        "name": "fliud_cost_price",
+        "comment": "Себестоимость флюида",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1d0c5c5b-6a5d-42c1-8f08-e4e012656e45"
+          },
+          {
+            "name": "value",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5a308cec-e4fd-4660-be34-f71d07492697"
+          },
+          {
+            "name": "fluid_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b8623e82-31ff-4840-be6d-cfb1aa28501a"
+          },
+          {
+            "name": "fluid_type_id",
+            "comment": "год",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5e0591a4-d527-43f8-ad90-bbacc07a5294"
+          },
+          {
+            "name": "deposit_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "72d99a49-802a-4724-8069-c72babc08375"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 484.3751,
+          "top": 744.5831,
+          "zIndex": 293,
+          "widthName": 92.3271484375,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "af347fed-4399-486e-b959-c8a620fb96da"
       }
     ],
     "indexes": []
@@ -180,6 +1490,189 @@
     "memos": []
   },
   "relationship": {
-    "relationships": []
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "244e2101-ac6b-4e37-ae76-4ea4c5c6e7c0",
+          "columnIds": [
+            "c0787755-e0e9-4090-ab2a-519aa43288dd"
+          ],
+          "x": 253.97314453125,
+          "y": 163.417,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "996ee7e9-a344-403f-ba58-0f95b7a7dd17",
+          "columnIds": [
+            "9bd6fc82-6d8d-4ccb-a8ca-1202e1f69516"
+          ],
+          "x": 322.061667578125,
+          "y": 340.4166,
+          "direction": "top"
+        },
+        "constraintName": "fk_tax_type_to_tax_default_value",
+        "visible": true,
+        "id": "4be9e939-1318-4cb6-bdcb-96e6b663d763"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0dfce4e5-4c12-4025-9b1e-86bacaf7c65a",
+          "columnIds": [
+            "aab645d8-2ebb-4614-adb1-82cd722d25ae"
+          ],
+          "x": 1220.8335,
+          "y": 433.3427,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1547a818-09c3-49aa-911f-1c7aed198217",
+          "columnIds": [
+            "8e1f00ec-91ff-46ab-8e8e-5ef88015b83c"
+          ],
+          "x": 929.706546875,
+          "y": 544.4998,
+          "direction": "right"
+        },
+        "constraintName": "fk_event_to_capacity",
+        "visible": true,
+        "id": "e76a0380-c893-441b-a667-67f1489add5c"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "28452f31-f424-4938-ab68-c70399639883",
+          "columnIds": [
+            "f6436bb1-099e-4dd0-844b-9782b486193e"
+          ],
+          "x": 1609.9999,
+          "y": 230.8333,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "0dfce4e5-4c12-4025-9b1e-86bacaf7c65a",
+          "columnIds": [
+            "a72e5436-0c78-43f8-9aad-ec1761026ed6"
+          ],
+          "x": 1496.2133828125,
+          "y": 357.8427,
+          "direction": "right"
+        },
+        "constraintName": "fk_expense_to_event",
+        "visible": true,
+        "id": "236de5ef-6a55-4596-a4af-cf1fdc883022"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0dfce4e5-4c12-4025-9b1e-86bacaf7c65a",
+          "columnIds": [
+            "aab645d8-2ebb-4614-adb1-82cd722d25ae"
+          ],
+          "x": 1220.8335,
+          "y": 357.8427,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "d3cd9d65-e851-423d-8f2b-916e9c595a3b",
+          "columnIds": [
+            "db11efde-7ddb-47f3-a71e-d92b04aa8b91"
+          ],
+          "x": 960.6712921875,
+          "y": 239.8149,
+          "direction": "right"
+        },
+        "constraintName": "fk_event_to_depreciation_period_defalut_value",
+        "visible": true,
+        "id": "f835d46d-6ee5-4346-8a2d-8092627e44ca"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0dfce4e5-4c12-4025-9b1e-86bacaf7c65a",
+          "columnIds": [
+            "aab645d8-2ebb-4614-adb1-82cd722d25ae"
+          ],
+          "x": 1496.2133828125,
+          "y": 433.3427,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "5c0321e7-c2fa-459c-b89c-2f3a0b10520d",
+          "columnIds": [
+            "8328f338-148e-48c3-8ede-f8a62ce3d646"
+          ],
+          "x": 1635.2083,
+          "y": 586.2496,
+          "direction": "left"
+        },
+        "constraintName": "fk_event_to_wgpt",
+        "visible": true,
+        "id": "fa2ca6a2-8018-4a7f-95c7-b491485e95e6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2b203101-d881-4c32-aaf5-40697101a646",
+          "columnIds": [
+            "9a712c90-7c28-4cfb-a243-b779922e905b"
+          ],
+          "x": 241.80078125,
+          "y": 891.6666,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "f243d419-137d-4b7e-b950-1d308fec71ae",
+          "columnIds": [
+            "e4745a5f-2744-4576-b267-cf67e2e955ac"
+          ],
+          "x": 307.8321234375,
+          "y": 793.6669,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_fluid_sale_price_condition_to_fluid_sale_price",
+        "visible": true,
+        "id": "d7108350-2d83-4470-9c1b-6cc7c380f9b7"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2b203101-d881-4c32-aaf5-40697101a646",
+          "columnIds": [
+            "9a712c90-7c28-4cfb-a243-b779922e905b"
+          ],
+          "x": 393.6015625,
+          "y": 946.6666,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "60068242-8e5c-4204-8bd2-5314b9c80d9e",
+          "columnIds": [
+            "670f9812-165a-4168-ae1c-cf8d10959f7f"
+          ],
+          "x": 776.6667,
+          "y": 937.6665,
+          "direction": "left"
+        },
+        "constraintName": "fk_fluid_sale_price_condition_to_ndpi",
+        "visible": true,
+        "id": "8ea0c8fb-b50e-48d7-b89b-e6ba7c0cf862"
+      }
+    ]
   }
 }
