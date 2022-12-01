@@ -26,6 +26,17 @@ CREATE TABLE event
 ALTER TABLE event
   ADD CONSTRAINT UQ_ID UNIQUE (ID);
 
+CREATE TABLE event_series
+(
+  ID        NOT NULL AUTO_INCREMENT,
+  event_ID  NOT NULL,
+  wgpt_ID   NOT NULL,
+  PRIMARY KEY (ID)
+) COMMENT 'По сути это и есть ГТМ';
+
+ALTER TABLE event_series
+  ADD CONSTRAINT UQ_ID UNIQUE (ID);
+
 CREATE TABLE expense
 (
   ID    NOT NULL AUTO_INCREMENT,
@@ -36,7 +47,7 @@ CREATE TABLE expense
 ALTER TABLE expense
   ADD CONSTRAINT UQ_ID UNIQUE (ID);
 
-CREATE TABLE fact_capacity
+CREATE TABLE fact_event_cost
 (
   ID              NOT NULL AUTO_INCREMENT,
   owner_id        NOT NULL,
@@ -51,7 +62,7 @@ CREATE TABLE fact_capacity
   PRIMARY KEY (ID)
 ) COMMENT 'стоимость ГТМ';
 
-ALTER TABLE fact_capacity
+ALTER TABLE fact_event_cost
   ADD CONSTRAINT UQ_ID UNIQUE (ID);
 
 CREATE TABLE fliud_cost_price
@@ -61,6 +72,7 @@ CREATE TABLE fliud_cost_price
   fluid_type_id  NOT NULL,
   fluid_type_id  NOT NULL COMMENT 'год',
   deposit_id     NOT NULL,
+  is_actual      NOT NULL COMMENT 'bool',
   PRIMARY KEY (id)
 ) COMMENT 'Себестоимость флюида';
 
@@ -105,6 +117,32 @@ CREATE TABLE MET
 ALTER TABLE MET
   ADD CONSTRAINT UQ_ID UNIQUE (ID);
 
+CREATE TABLE risk
+(
+  ID          NOT NULL AUTO_INCREMENT,
+  product     NOT NULL COMMENT 'добыча',
+  cost        NOT NULL COMMENT 'стоимость ГТМ',
+  sale_price  NOT NULL COMMENT 'цена реализации',
+  cost_price  NOT NULL COMMENT 'Себестоимость добычи',
+  PRIMARY KEY (ID)
+) COMMENT 'Неопределенности';
+
+ALTER TABLE risk
+  ADD CONSTRAINT UQ_ID UNIQUE (ID);
+
+CREATE TABLE summary
+(
+  ID                   NOT NULL AUTO_INCREMENT,
+  risk_ID              NOT NULL,
+  wgpt_ID              NOT NULL,
+  fliud_cost_price_id  NOT NULL,
+  tax_ID               NOT NULL,
+  PRIMARY KEY (ID)
+) COMMENT 'итоговая конфигуркция расчета';
+
+ALTER TABLE summary
+  ADD CONSTRAINT UQ_ID UNIQUE (ID);
+
 CREATE TABLE Tax_default_value
 (
   ID           NOT NULL,
@@ -129,13 +167,12 @@ ALTER TABLE Tax_type
 
 CREATE TABLE wgpt
 (
-  ID                 NOT NULL AUTO_INCREMENT,
-  well_id            NOT NULL,
-  value              NOT NULL,
-  date               NOT NULL,
-  variant_ID         NOT NULL,
-  fluid_type_id      NOT NULL,
-  event_ID_for_well  NOT NULL,
+  ID             NOT NULL AUTO_INCREMENT,
+  well_id        NOT NULL,
+  value          NOT NULL,
+  date           NOT NULL,
+  variant_ID     NOT NULL,
+  fluid_type_id  NOT NULL,
   PRIMARY KEY (ID)
 ) COMMENT 'Показатели накопленная добычадобычи по скважинам для КРСов';
 
@@ -147,8 +184,8 @@ ALTER TABLE Tax_default_value
     FOREIGN KEY (tax_type_ID)
     REFERENCES Tax_type (ID);
 
-ALTER TABLE fact_capacity
-  ADD CONSTRAINT FK_event_TO_fact_capacity
+ALTER TABLE fact_event_cost
+  ADD CONSTRAINT FK_event_TO_fact_event_cost
     FOREIGN KEY (event_ID)
     REFERENCES event (ID);
 
@@ -156,16 +193,6 @@ ALTER TABLE event
   ADD CONSTRAINT FK_expense_TO_event
     FOREIGN KEY (expense_ID)
     REFERENCES expense (ID);
-
-ALTER TABLE depreciation_period_defalut_value
-  ADD CONSTRAINT FK_event_TO_depreciation_period_defalut_value
-    FOREIGN KEY (event_ID)
-    REFERENCES event (ID);
-
-ALTER TABLE wgpt
-  ADD CONSTRAINT FK_event_TO_wgpt
-    FOREIGN KEY (event_ID_for_well)
-    REFERENCES event (ID);
 
 ALTER TABLE fluid_sale_price
   ADD CONSTRAINT FK_fluid_sale_price_condition_TO_fluid_sale_price
@@ -176,3 +203,38 @@ ALTER TABLE MET
   ADD CONSTRAINT FK_fluid_sale_price_condition_TO_MET
     FOREIGN KEY (condition_ID)
     REFERENCES fluid_sale_price_condition (ID);
+
+ALTER TABLE depreciation_period_defalut_value
+  ADD CONSTRAINT FK_event_TO_depreciation_period_defalut_value
+    FOREIGN KEY (event_ID)
+    REFERENCES event (ID);
+
+ALTER TABLE event_series
+  ADD CONSTRAINT FK_event_TO_event_series
+    FOREIGN KEY (event_ID)
+    REFERENCES event (ID);
+
+ALTER TABLE event_series
+  ADD CONSTRAINT FK_wgpt_TO_event_series
+    FOREIGN KEY (wgpt_ID)
+    REFERENCES wgpt (ID);
+
+ALTER TABLE summary
+  ADD CONSTRAINT FK_risk_TO_summary
+    FOREIGN KEY (risk_ID)
+    REFERENCES risk (ID);
+
+ALTER TABLE summary
+  ADD CONSTRAINT FK_wgpt_TO_summary
+    FOREIGN KEY (wgpt_ID)
+    REFERENCES wgpt (ID);
+
+ALTER TABLE summary
+  ADD CONSTRAINT FK_fliud_cost_price_TO_summary
+    FOREIGN KEY (fliud_cost_price_id)
+    REFERENCES fliud_cost_price (id);
+
+ALTER TABLE summary
+  ADD CONSTRAINT FK_Tax_default_value_TO_summary
+    FOREIGN KEY (tax_ID)
+    REFERENCES Tax_default_value (ID);

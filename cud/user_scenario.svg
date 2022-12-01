@@ -1,0 +1,434 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="981pt" height="3644pt" viewBox="0.00 0.00 981.42 3644">
+<g id="graph0" class="graph" transform="translate(-1570.4940858019138,15247.064637756317) scale(4.594793419988149)" data-name="root">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-3640 977.42,-3640 977.42,4 -4,4"/>
+<!-- main_1 -->
+<g id="node1" class="node" pointer-events="visible" data-name="main_1">
+
+<polygon fill="none" stroke="darkviolet" points="550,-3636 366,-3636 366,-3456 550,-3456 550,-3636"/>
+<text text-anchor="middle" x="458" y="-3541.8" font-family="Times,serif" font-size="14.00">Наполнение базы прогнозов</text>
+</g>
+<!-- main_2 -->
+<g id="node2" class="node" pointer-events="visible" data-name="main_2">
+
+<polygon fill="none" stroke="black" points="648,-3357.81 558,-3420 468,-3357.81 502.38,-3257.19 613.62,-3257.19 648,-3357.81"/>
+<text text-anchor="middle" x="558" y="-3334.2" font-family="Times,serif" font-size="14.00">Выбор</text>
+<text text-anchor="middle" x="558" y="-3317.4" font-family="Times,serif" font-size="14.00">отложения</text>
+</g>
+<!-- main_1&#45;&gt;main_2 -->
+<g id="edge1" class="edge" data-name="main_1-&gt;main_2">
+
+<path fill="none" stroke="darkviolet" d="M499.68,-3455.79C508.63,-3436.64 517.95,-3416.71 526.44,-3398.54"/>
+</g>
+<!-- main_3 -->
+<g id="node3" class="node" pointer-events="visible" data-name="main_3">
+
+<polygon fill="none" stroke="black" points="180,-3141.81 90,-3204 0,-3141.81 34.38,-3041.19 145.62,-3041.19 180,-3141.81"/>
+<text text-anchor="middle" x="90" y="-3126.6" font-family="Times,serif" font-size="14.00">Выбор</text>
+<text text-anchor="middle" x="90" y="-3109.8" font-family="Times,serif" font-size="14.00">исторических</text>
+<text text-anchor="middle" x="90" y="-3093" font-family="Times,serif" font-size="14.00">гдм моделей</text>
+</g>
+<!-- main_2&#45;&gt;main_3 -->
+<g id="edge2" class="edge" data-name="main_2-&gt;main_3">
+
+<path fill="none" stroke="darkviolet" d="M483.41,-3312.19C407.29,-3293.06 287.39,-3257.39 194,-3204 176.36,-3193.92 158.9,-3180.64 143.47,-3167.43"/>
+</g>
+<!-- hist_2 -->
+<g id="node7" class="node" pointer-events="visible" data-name="hist_2">
+
+<ellipse fill="none" stroke="orange" cx="293" cy="-2682" rx="90" ry="90"/>
+<text text-anchor="middle" x="293" y="-2694.6" font-family="Times,serif" font-size="14.00">Выбор</text>
+<text text-anchor="middle" x="293" y="-2677.8" font-family="Times,serif" font-size="14.00">геологической</text>
+<text text-anchor="middle" x="293" y="-2661" font-family="Times,serif" font-size="14.00">модели</text>
+</g>
+<!-- main_2&#45;&gt;hist_2 -->
+<g id="edge15" class="edge" data-name="main_2-&gt;hist_2">
+
+<path fill="none" stroke="orange" d="M479.94,-3322.05C404.51,-3310.79 293.72,-3281.29 238,-3204 186.52,-3132.59 205.83,-2893.45 227,-2808 231.1,-2791.44 237.84,-2774.67 245.48,-2759"/>
+</g>
+<!-- event_2 -->
+<g id="node10" class="node" pointer-events="visible" data-name="event_2">
+
+<ellipse fill="none" stroke="blue" cx="619" cy="-1170" rx="90" ry="90"/>
+<text text-anchor="middle" x="619" y="-1182.6" font-family="Times,serif" font-size="14.00">Web форма</text>
+<text text-anchor="middle" x="619" y="-1165.8" font-family="Times,serif" font-size="14.00">для выбора</text>
+<text text-anchor="middle" x="619" y="-1149" font-family="Times,serif" font-size="14.00">мероприятия</text>
+</g>
+<!-- main_2&#45;&gt;event_2 -->
+<g id="edge30" class="edge" data-name="main_2-&gt;event_2">
+
+<path fill="none" stroke="blue" d="M624.17,-3287.04C722.82,-3218.74 897,-3073.44 897,-2899 897,-2899 897,-2899 897,-1601 897,-1448.34 833.61,-1415.81 739,-1296 722.13,-1274.63 702.19,-1252.75 683.46,-1233.39"/>
+</g>
+<!-- geo_1 -->
+<g id="node13" class="node" pointer-events="visible" data-name="geo_1">
+
+<ellipse fill="none" stroke="green" cx="355" cy="-2466" rx="90" ry="90"/>
+<text text-anchor="middle" x="355" y="-2478.6" font-family="Times,serif" font-size="14.00">Web форма</text>
+<text text-anchor="middle" x="355" y="-2461.8" font-family="Times,serif" font-size="14.00">для геологических</text>
+<text text-anchor="middle" x="355" y="-2445" font-family="Times,serif" font-size="14.00">моеделей</text>
+</g>
+<!-- main_2&#45;&gt;geo_1 -->
+<g id="edge21" class="edge" data-name="main_2-&gt;geo_1">
+
+<path fill="none" stroke="green" d="M524.99,-3256.9C518.01,-3239.8 511.19,-3221.46 506,-3204 466.55,-3071.41 424.34,-2726.51 392,-2592 388.9,-2579.13 385.29,-2565.61 381.56,-2552.42"/>
+</g>
+<!-- geo_2 -->
+<g id="node14" class="node" pointer-events="visible" data-name="geo_2">
+
+<ellipse fill="none" stroke="green" cx="355" cy="-2250" rx="90" ry="90"/>
+<text text-anchor="middle" x="355" y="-2254.2" font-family="Times,serif" font-size="14.00">Загрузка шаблонов</text>
+<text text-anchor="middle" x="355" y="-2237.4" font-family="Times,serif" font-size="14.00">c запасами по объектам</text>
+</g>
+<!-- main_2&#45;&gt;geo_2 -->
+<g id="edge22" class="edge" data-name="main_2-&gt;geo_2">
+
+<path fill="none" stroke="green" d="M547.72,-3256.89C536.46,-3171.61 520,-3025.28 520,-2899 520,-2899 520,-2899 520,-2681 520,-2542.31 513.26,-2501.4 454,-2376 444.18,-2355.23 430.32,-2334.78 416.08,-2316.64"/>
+</g>
+<!-- obj_2 -->
+<g id="node18" class="node" pointer-events="visible" data-name="obj_2">
+
+<ellipse fill="none" stroke="brown" cx="553" cy="-1818" rx="90" ry="90"/>
+<text text-anchor="middle" x="553" y="-1830.6" font-family="Times,serif" font-size="14.00">Загрузка шаблонов</text>
+<text text-anchor="middle" x="553" y="-1813.8" font-family="Times,serif" font-size="14.00">c объектами</text>
+<text text-anchor="middle" x="553" y="-1797" font-family="Times,serif" font-size="14.00">разработки</text>
+</g>
+<!-- main_2&#45;&gt;obj_2 -->
+<g id="edge42" class="edge" data-name="main_2-&gt;obj_2">
+
+<path fill="none" stroke="brown" d="M558,-3256.72C558,-3171.28 558,-3024.79 558,-2899 558,-2899 558,-2899 558,-2681 558,-2542.93 525.29,-2511.54 499,-2376 495.9,-2360 493.56,-2356.22 492,-2340 475.13,-2164.81 452.39,-2115.48 492,-1944 495.67,-1928.12 501.64,-1911.92 508.45,-1896.68"/>
+</g>
+<!-- infr_2 -->
+<g id="node22" class="node" pointer-events="visible" data-name="infr_2">
+
+<ellipse fill="none" stroke="red" cx="817" cy="-738" rx="90" ry="90"/>
+<text text-anchor="middle" x="817" y="-750.6" font-family="Times,serif" font-size="14.00">Загрузка шаблонов</text>
+<text text-anchor="middle" x="817" y="-733.8" font-family="Times,serif" font-size="14.00">c объектами</text>
+<text text-anchor="middle" x="817" y="-717" font-family="Times,serif" font-size="14.00">инфроструктуры</text>
+</g>
+<!-- main_2&#45;&gt;infr_2 -->
+<g id="edge38" class="edge" data-name="main_2-&gt;infr_2">
+
+<path fill="none" stroke="red" d="M635.17,-3319.23C709.11,-3305.85 818.81,-3274.78 884,-3204 979.66,-3100.13 973,-3040.21 973,-2899 973,-2899 973,-2899 973,-1169 973,-1031.1 973.15,-989.5 916,-864 906.42,-842.96 892.56,-822.35 878.23,-804.12"/>
+</g>
+<!-- main_4 -->
+<g id="node4" class="node" pointer-events="visible" data-name="main_4">
+
+<polygon fill="none" stroke="black" points="426,-1629.81 336,-1692 246,-1629.81 280.38,-1529.19 391.62,-1529.19 426,-1629.81"/>
+<text text-anchor="middle" x="336" y="-1606.2" font-family="Times,serif" font-size="14.00">Выбор</text>
+<text text-anchor="middle" x="336" y="-1589.4" font-family="Times,serif" font-size="14.00">мероприятий</text>
+</g>
+<!-- main_3&#45;&gt;main_4 -->
+<g id="edge7" class="edge" data-name="main_3-&gt;main_4">
+
+<path fill="none" stroke="darkviolet" d="M104.07,-3041.04C119.47,-2955.91 142,-2809.71 142,-2683 142,-2683 142,-2683 142,-2033 142,-1893.3 150.97,-1850.57 218,-1728 233.32,-1699.98 256.45,-1673.55 278.18,-1652.27"/>
+</g>
+<!-- hist_1 -->
+<g id="node6" class="node" pointer-events="visible" data-name="hist_1">
+
+<ellipse fill="none" stroke="orange" cx="326" cy="-2898" rx="90" ry="90"/>
+<text text-anchor="middle" x="326" y="-2910.6" font-family="Times,serif" font-size="14.00">Web форма</text>
+<text text-anchor="middle" x="326" y="-2893.8" font-family="Times,serif" font-size="14.00">для исторических</text>
+<text text-anchor="middle" x="326" y="-2877" font-family="Times,serif" font-size="14.00">моеделей</text>
+</g>
+<!-- main_3&#45;&gt;hist_1 -->
+<g id="edge3" class="edge" data-name="main_3-&gt;hist_1">
+
+<path fill="none" stroke="orange" d="M150.72,-3056.59C183.91,-3026.5 224.92,-2989.3 258.86,-2958.53"/>
+<path fill="none" stroke="darkviolet" d="M152.06,-3058.07C185.25,-3027.98 226.27,-2990.79 260.21,-2960.01"/>
+</g>
+<!-- main_5 -->
+<g id="node5" class="node" pointer-events="visible" data-name="main_5">
+
+<ellipse fill="none" stroke="darkviolet" cx="482" cy="-90" rx="100.9" ry="90"/>
+<text text-anchor="middle" x="482" y="-119.4" font-family="Times,serif" font-size="14.00">Загрузка</text>
+<text text-anchor="middle" x="482" y="-102.6" font-family="Times,serif" font-size="14.00">шаблонов c показателями:</text>
+<text text-anchor="middle" x="482" y="-85.8" font-family="Times,serif" font-size="14.00">-по отложениям</text>
+<text text-anchor="middle" x="482" y="-69" font-family="Times,serif" font-size="14.00">-кпр-</text>
+<text text-anchor="middle" x="482" y="-52.2" font-family="Times,serif" font-size="14.00">-обучющяя выборка</text>
+</g>
+<!-- main_4&#45;&gt;main_5 -->
+<g id="edge12" class="edge" data-name="main_4-&gt;main_5">
+
+<path fill="none" stroke="darkviolet" d="M359.77,-1528.86C385.53,-1444.16 423,-1298.96 423,-1171 423,-1171 423,-1171 423,-521 423,-401.57 445.62,-265.19 462.84,-178.64"/>
+</g>
+<!-- event_1 -->
+<g id="node9" class="node" pointer-events="visible" data-name="event_1">
+
+<ellipse fill="none" stroke="blue" cx="640" cy="-1386" rx="90" ry="90"/>
+<text text-anchor="middle" x="640" y="-1398.6" font-family="Times,serif" font-size="14.00">Выбор</text>
+<text text-anchor="middle" x="640" y="-1381.8" font-family="Times,serif" font-size="14.00">объекта</text>
+<text text-anchor="middle" x="640" y="-1365" font-family="Times,serif" font-size="14.00">инфроструктуры</text>
+</g>
+<!-- main_4&#45;&gt;event_1 -->
+<g id="edge8" class="edge" data-name="main_4-&gt;event_1">
+
+<path fill="none" stroke="darkviolet" d="M397.74,-1546.67C412.45,-1534.65 428.25,-1522.21 443.41,-1511.19 481.66,-1483.4 525.88,-1454.9 562.66,-1432.13"/>
+<path fill="none" stroke="blue" d="M399,-1548.22C413.68,-1536.22 429.49,-1523.78 444.59,-1512.81 482.74,-1485.08 526.96,-1456.58 563.71,-1433.83"/>
+</g>
+<!-- hist_1&#45;&gt;main_2 -->
+<g id="edge14" class="edge" data-name="hist_1-&gt;main_2">
+
+<path fill="none" stroke="orange" d="M281.11,-2976.18C249.45,-3041.76 219.98,-3135.85 265,-3204 312.55,-3275.99 410.95,-3306.66 480.57,-3319.63"/>
+</g>
+<!-- hist_1&#45;&gt;hist_2 -->
+<g id="edge4" class="edge" data-name="hist_1-&gt;hist_2">
+
+<path fill="none" stroke="orange" d="M311.4,-2808.87C309.5,-2796.56 307.55,-2783.89 305.65,-2771.57"/>
+<path fill="none" stroke="darkviolet" d="M313.38,-2808.57C311.48,-2796.25 309.52,-2783.59 307.62,-2771.27"/>
+</g>
+<!-- hist_3 -->
+<g id="node8" class="node" pointer-events="visible" data-name="hist_3">
+
+<ellipse fill="none" stroke="orange" cx="317" cy="-1818" rx="90" ry="90"/>
+<text text-anchor="middle" x="317" y="-1839" font-family="Times,serif" font-size="14.00">Запись</text>
+<text text-anchor="middle" x="317" y="-1822.2" font-family="Times,serif" font-size="14.00">в базу</text>
+<text text-anchor="middle" x="317" y="-1805.4" font-family="Times,serif" font-size="14.00">исторических</text>
+<text text-anchor="middle" x="317" y="-1788.6" font-family="Times,serif" font-size="14.00">моделей</text>
+</g>
+<!-- hist_2&#45;&gt;hist_3 -->
+<g id="edge5" class="edge" data-name="hist_2-&gt;hist_3">
+
+<path fill="none" stroke="orange" d="M260.85,-2597.38C213.83,-2457.64 138.3,-2170.48 217.06,-1943.67 224.84,-1921.37 238.24,-1900.24 252.81,-1881.77"/>
+<path fill="none" stroke="darkviolet" d="M262.74,-2596.74C215.76,-2457.13 140.23,-2169.98 218.94,-1944.33 226.53,-1922.44 239.93,-1901.32 254.38,-1883.01"/>
+</g>
+<!-- hist_2&#45;&gt;geo_1 -->
+<g id="edge16" class="edge" data-name="hist_2-&gt;geo_1">
+
+<path fill="none" stroke="orange" d="M316.9,-2594.91C320.94,-2580.96 325.13,-2566.5 329.17,-2552.55"/>
+<path fill="none" stroke="green" d="M318.82,-2595.47C322.86,-2581.52 327.05,-2567.06 331.09,-2553.11"/>
+</g>
+<!-- hist_3&#45;&gt;main_4 -->
+<g id="edge6" class="edge" data-name="hist_3-&gt;main_4">
+
+<path fill="none" stroke="orange" d="M323.9,-1728.02C325.1,-1714.46 326.34,-1700.52 327.53,-1687.07"/>
+<path fill="none" stroke="darkviolet" d="M325.89,-1728.19C327.09,-1714.64 328.33,-1700.69 329.52,-1687.25"/>
+</g>
+<!-- event_1&#45;&gt;main_2 -->
+<g id="edge29" class="edge" data-name="event_1-&gt;main_2">
+
+<path fill="none" stroke="blue" d="M651.1,-1475.76C678.47,-1697.62 747,-2272.34 747,-2465 747,-2899 747,-2899 747,-2899 747,-3038.49 738.76,-3080.98 673,-3204 659.38,-3229.49 639.33,-3253.78 619.78,-3274.05"/>
+</g>
+<!-- event_1&#45;&gt;event_2 -->
+<g id="edge9" class="edge" data-name="event_1-&gt;event_2">
+
+<path fill="none" stroke="darkviolet" d="M630.28,-1296.2C629.11,-1284.26 627.91,-1272.01 626.73,-1260.06"/>
+<path fill="none" stroke="blue" d="M632.27,-1296.01C631.1,-1284.06 629.9,-1271.81 628.73,-1259.87"/>
+</g>
+<!-- event_3 -->
+<g id="node11" class="node" pointer-events="visible" data-name="event_3">
+
+<ellipse fill="none" stroke="blue" cx="619" cy="-306" rx="90" ry="90"/>
+<text text-anchor="middle" x="619" y="-318.6" font-family="Times,serif" font-size="14.00">Запись</text>
+<text text-anchor="middle" x="619" y="-301.8" font-family="Times,serif" font-size="14.00">в базу</text>
+<text text-anchor="middle" x="619" y="-285" font-family="Times,serif" font-size="14.00">мероприятия</text>
+</g>
+<!-- event_2&#45;&gt;event_3 -->
+<g id="edge10" class="edge" data-name="event_2-&gt;event_3">
+
+<path fill="none" stroke="darkviolet" d="M613.69,-1080.02C610.44,-914.6 610.44,-561.68 613.69,-396.14"/>
+<path fill="none" stroke="blue" d="M615.69,-1079.98C612.44,-914.6 612.44,-561.68 615.69,-396.18"/>
+</g>
+<!-- event_2&#45;&gt;event_3 -->
+<g id="edge35" class="edge" data-name="event_2-&gt;event_3">
+
+<path fill="none" stroke="blue" d="M623.31,-1080C626.56,-914.6 626.56,-561.68 623.31,-396.16" style=""/>
+</g>
+<!-- infr_1 -->
+<g id="node21" class="node" pointer-events="visible" data-name="infr_1">
+
+<ellipse fill="none" stroke="red" cx="817" cy="-954" rx="90" ry="90"/>
+<text text-anchor="middle" x="817" y="-966.6" font-family="Times,serif" font-size="14.00">Web форма</text>
+<text text-anchor="middle" x="817" y="-949.8" font-family="Times,serif" font-size="14.00">для объектов</text>
+<text text-anchor="middle" x="817" y="-933" font-family="Times,serif" font-size="14.00">инфроструктуры</text>
+</g>
+<!-- event_2&#45;&gt;infr_1 -->
+<g id="edge31" class="edge" data-name="event_2-&gt;infr_1">
+
+<path fill="none" stroke="red" d="M679.02,-1102.66C703.35,-1076.37 731.31,-1046.14 755.63,-1019.86"/>
+<path fill="none" stroke="blue" d="M680.49,-1104.02C704.81,-1077.72 732.78,-1047.5 757.1,-1021.22"/>
+</g>
+<!-- event_3&#45;&gt;main_5 -->
+<g id="edge11" class="edge" data-name="event_3-&gt;main_5">
+
+<path fill="none" stroke="darkviolet" d="M569.86,-230.09C557.22,-210.36 543.58,-189.05 530.88,-169.2"/>
+<path fill="none" stroke="blue" d="M571.54,-229.01C558.91,-209.28 545.27,-187.97 532.56,-168.12"/>
+</g>
+<!-- hist_0 -->
+<g id="node12" class="node" pointer-events="visible" data-name="hist_0">
+
+<ellipse fill="none" stroke="orange" cx="364" cy="-3114" rx="90" ry="90"/>
+<text text-anchor="middle" x="364" y="-3126.6" font-family="Times,serif" font-size="14.00">Создание</text>
+<text text-anchor="middle" x="364" y="-3109.8" font-family="Times,serif" font-size="14.00">исторических</text>
+<text text-anchor="middle" x="364" y="-3093" font-family="Times,serif" font-size="14.00">моделей</text>
+</g>
+<!-- hist_0&#45;&gt;hist_1 -->
+<g id="edge13" class="edge" data-name="hist_0-&gt;hist_1">
+
+<path fill="none" stroke="orange" d="M348.38,-3025.03C346.15,-3012.47 343.85,-2999.54 341.62,-2986.97"/>
+</g>
+<!-- geo_1&#45;&gt;geo_2 -->
+<g id="edge17" class="edge" data-name="geo_1-&gt;geo_2">
+
+<path fill="none" stroke="orange" d="M354,-2375.79C354,-2364.1 354,-2352.11 354,-2340.41"/>
+<path fill="none" stroke="green" d="M356,-2375.79C356,-2364.1 356,-2352.11 356,-2340.41"/>
+</g>
+<!-- geo_3 -->
+<g id="node15" class="node" pointer-events="visible" data-name="geo_3">
+
+<ellipse fill="none" stroke="green" cx="317" cy="-2034" rx="90" ry="90"/>
+<text text-anchor="middle" x="317" y="-2038.2" font-family="Times,serif" font-size="14.00">Запись в базу</text>
+<text text-anchor="middle" x="317" y="-2021.4" font-family="Times,serif" font-size="14.00">гелогических моделей</text>
+</g>
+<!-- geo_2&#45;&gt;geo_3 -->
+<g id="edge18" class="edge" data-name="geo_2-&gt;geo_3">
+
+<path fill="none" stroke="orange" d="M331.97,-2162.45C329.59,-2149.81 327.27,-2136.79 325.14,-2124.11"/>
+<path fill="none" stroke="green" d="M333.94,-2162.08C331.56,-2149.46 329.24,-2136.44 327.12,-2123.78"/>
+</g>
+<!-- geo_2&#45;&gt;geo_3 -->
+<g id="edge27" class="edge" data-name="geo_2-&gt;geo_3">
+
+<path fill="none" stroke="green" d="M345.88,-2160.1C343.74,-2147.36 341.4,-2134.26 339.01,-2121.56" style=""/>
+</g>
+<!-- obj_1 -->
+<g id="node17" class="node" pointer-events="visible" data-name="obj_1">
+
+<ellipse fill="none" stroke="brown" cx="591" cy="-2034" rx="90" ry="90"/>
+<text text-anchor="middle" x="591" y="-2046.6" font-family="Times,serif" font-size="14.00">Web форма</text>
+<text text-anchor="middle" x="591" y="-2029.8" font-family="Times,serif" font-size="14.00">для объектов</text>
+<text text-anchor="middle" x="591" y="-2013" font-family="Times,serif" font-size="14.00">разработки</text>
+</g>
+<!-- geo_2&#45;&gt;obj_1 -->
+<g id="edge23" class="edge" data-name="geo_2-&gt;obj_1">
+
+<path fill="none" stroke="black" d="M421.37,-2188.82C453.68,-2159.52 492.42,-2124.39 524.72,-2095.1"/>
+</g>
+<!-- geo_3&#45;&gt;hist_3 -->
+<g id="edge19" class="edge" data-name="geo_3-&gt;hist_3">
+
+<path fill="none" stroke="orange" d="M316,-1943.79C316,-1932.1 316,-1920.11 316,-1908.41"/>
+<path fill="none" stroke="green" d="M318,-1943.79C318,-1932.1 318,-1920.11 318,-1908.41"/>
+</g>
+<!-- geo_0 -->
+<g id="node16" class="node" pointer-events="visible" data-name="geo_0">
+
+<ellipse fill="none" stroke="green" cx="658" cy="-3546" rx="90" ry="90"/>
+<text text-anchor="middle" x="658" y="-3558.6" font-family="Times,serif" font-size="14.00">Создание</text>
+<text text-anchor="middle" x="658" y="-3541.8" font-family="Times,serif" font-size="14.00">гелогических</text>
+<text text-anchor="middle" x="658" y="-3525" font-family="Times,serif" font-size="14.00">моделей</text>
+</g>
+<!-- geo_0&#45;&gt;main_2 -->
+<g id="edge20" class="edge" data-name="geo_0-&gt;main_2">
+
+<path fill="none" stroke="green" d="M620.19,-3464.1C610.07,-3442.44 599.24,-3419.26 589.5,-3398.41"/>
+</g>
+<!-- obj_1&#45;&gt;main_2 -->
+<g id="edge41" class="edge" data-name="obj_1-&gt;main_2">
+
+<path fill="none" stroke="brown" d="M653.75,-2099.05C668.16,-2117.36 681.68,-2138.29 690,-2160 738.61,-2286.82 709,-2329.18 709,-2465 709,-2899 709,-2899 709,-2899 709,-3030.94 644.93,-3173.43 600.26,-3256.76"/>
+</g>
+<!-- obj_1&#45;&gt;obj_2 -->
+<g id="edge24" class="edge" data-name="obj_1-&gt;obj_2">
+
+<path fill="none" stroke="black" d="M575.38,-1945.03C573.15,-1932.47 570.85,-1919.54 568.62,-1906.97"/>
+</g>
+<!-- obj_3 -->
+<g id="node19" class="node" pointer-events="visible" data-name="obj_3">
+
+<ellipse fill="none" stroke="brown" cx="543" cy="-1602" rx="90" ry="90"/>
+<text text-anchor="middle" x="543" y="-1614.6" font-family="Times,serif" font-size="14.00">Записьв базу</text>
+<text text-anchor="middle" x="543" y="-1597.8" font-family="Times,serif" font-size="14.00">объекта</text>
+<text text-anchor="middle" x="543" y="-1581" font-family="Times,serif" font-size="14.00">разработки</text>
+</g>
+<!-- obj_2&#45;&gt;obj_3 -->
+<g id="edge25" class="edge" data-name="obj_2-&gt;obj_3">
+
+<path fill="none" stroke="black" d="M542.2,-1728.41C541.52,-1716.45 540.95,-1704.18 540.5,-1692.21"/>
+</g>
+<!-- obj_2&#45;&gt;obj_3 -->
+<g id="edge43" class="edge" data-name="obj_2-&gt;obj_3">
+
+<path fill="none" stroke="brown" d="M555.5,-1727.79C555.05,-1715.87 554.48,-1703.64 553.81,-1691.72" style=""/>
+</g>
+<!-- obj_3&#45;&gt;geo_2 -->
+<g id="edge26" class="edge" data-name="obj_3-&gt;geo_2">
+
+<path fill="none" stroke="black" d="M484.98,-1671.03C472.79,-1688.58 461.41,-1708.16 454,-1728 392.18,-1893.65 463.98,-1953.83 416,-2124 411.61,-2139.57 405.34,-2155.55 398.47,-2170.67"/>
+</g>
+<!-- event_0 -->
+<g id="node20" class="node" pointer-events="visible" data-name="event_0">
+
+<ellipse fill="none" stroke="blue" cx="779" cy="-1602" rx="90" ry="90"/>
+<text text-anchor="middle" x="779" y="-1606.2" font-family="Times,serif" font-size="14.00">Создание</text>
+<text text-anchor="middle" x="779" y="-1589.4" font-family="Times,serif" font-size="14.00">мероприятия</text>
+</g>
+<!-- event_0&#45;&gt;event_1 -->
+<g id="edge28" class="edge" data-name="event_0-&gt;event_1">
+
+<path fill="none" stroke="blue" d="M730.19,-1525.85C716.73,-1505.14 702.14,-1482.67 688.69,-1461.97"/>
+</g>
+<!-- infr_1&#45;&gt;main_2 -->
+<g id="edge37" class="edge" data-name="infr_1-&gt;main_2">
+
+<path fill="none" stroke="red" d="M879.75,-1019.05C894.16,-1037.36 907.68,-1058.29 916,-1080 964.61,-1206.82 935,-1249.18 935,-1385 935,-2899 935,-2899 935,-2899 935,-3044.51 915.53,-3097.86 816,-3204 766.12,-3257.19 688.84,-3290.44 631.85,-3309.15"/>
+</g>
+<!-- infr_1&#45;&gt;infr_2 -->
+<g id="edge32" class="edge" data-name="infr_1-&gt;infr_2">
+
+<path fill="none" stroke="red" d="M816,-863.79C816,-852.1 816,-840.11 816,-828.41"/>
+<path fill="none" stroke="blue" d="M818,-863.79C818,-852.1 818,-840.11 818,-828.41"/>
+</g>
+<!-- infr_3 -->
+<g id="node23" class="node" pointer-events="visible" data-name="infr_3">
+
+<ellipse fill="none" stroke="red" cx="817" cy="-522" rx="90" ry="90"/>
+<text text-anchor="middle" x="817" y="-534.6" font-family="Times,serif" font-size="14.00">Записьв базу</text>
+<text text-anchor="middle" x="817" y="-517.8" font-family="Times,serif" font-size="14.00">объекта</text>
+<text text-anchor="middle" x="817" y="-501" font-family="Times,serif" font-size="14.00">инфроструктуры </text>
+</g>
+<!-- infr_2&#45;&gt;infr_3 -->
+<g id="edge33" class="edge" data-name="infr_2-&gt;infr_3">
+
+<path fill="none" stroke="red" d="M809.33,-647.8C809.22,-635.98 809.22,-623.87 809.34,-612.05"/>
+<path fill="none" stroke="blue" d="M811.33,-647.78C811.22,-635.98 811.22,-623.87 811.33,-612.07"/>
+</g>
+<!-- infr_2&#45;&gt;infr_3 -->
+<g id="edge39" class="edge" data-name="infr_2-&gt;infr_3">
+
+<path fill="none" stroke="red" d="M823.67,-647.79C823.78,-635.98 823.78,-623.87 823.66,-612.06" style=""/>
+</g>
+<!-- infr_3&#45;&gt;event_3 -->
+<g id="edge34" class="edge" data-name="infr_3-&gt;event_3">
+
+<path fill="none" stroke="red" d="M755.51,-456.02C731.19,-429.72 703.22,-399.5 678.9,-373.22"/>
+<path fill="none" stroke="blue" d="M756.98,-454.66C732.65,-428.37 704.69,-398.14 680.37,-371.86"/>
+</g>
+<!-- infr_0 -->
+<g id="node24" class="node" pointer-events="visible" data-name="infr_0">
+
+<ellipse fill="none" stroke="red" cx="817" cy="-1170" rx="90" ry="90"/>
+<text text-anchor="middle" x="817" y="-1182.6" font-family="Times,serif" font-size="14.00">Создание</text>
+<text text-anchor="middle" x="817" y="-1165.8" font-family="Times,serif" font-size="14.00">объекта</text>
+<text text-anchor="middle" x="817" y="-1149" font-family="Times,serif" font-size="14.00">инфроструктуры </text>
+</g>
+<!-- infr_0&#45;&gt;infr_1 -->
+<g id="edge36" class="edge" data-name="infr_0-&gt;infr_1">
+
+<path fill="none" stroke="red" d="M817,-1079.79C817,-1068.1 817,-1056.11 817,-1044.41"/>
+</g>
+<!-- obj_0 -->
+<g id="node25" class="node" pointer-events="visible" data-name="obj_0">
+
+<ellipse fill="none" stroke="brown" cx="591" cy="-2250" rx="90" ry="90"/>
+<text text-anchor="middle" x="591" y="-2262.6" font-family="Times,serif" font-size="14.00">Создание</text>
+<text text-anchor="middle" x="591" y="-2245.8" font-family="Times,serif" font-size="14.00">объекта</text>
+<text text-anchor="middle" x="591" y="-2229" font-family="Times,serif" font-size="14.00">разработки </text>
+</g>
+<!-- obj_0&#45;&gt;obj_1 -->
+<g id="edge40" class="edge" data-name="obj_0-&gt;obj_1">
+
+<path fill="none" stroke="brown" d="M591,-2159.79C591,-2148.1 591,-2136.11 591,-2124.41"/>
+</g>
+</g>
+</svg>

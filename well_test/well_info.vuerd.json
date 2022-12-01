@@ -1,0 +1,806 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -134.16666133536268,
+    "scrollLeft": -305.8333211806088,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": false,
+      "columnDefault": false,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "mesers_type",
+        "comment": "Типы значений (глубина, давление)",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "63424876-2e7c-4f96-8eca-8a742f260023"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f2140a38-b623-4254-bc95-040b3c494775"
+          },
+          {
+            "name": "si_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0596be0f-bcee-454a-a87c-3759a1d05143"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 472.7077,
+          "top": 289.7914,
+          "zIndex": 274,
+          "widthName": 76.419921875,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "0bbda8be-9502-4fb1-8f09-273d025c3db1"
+      },
+      {
+        "name": "SI_base",
+        "comment": "Базовые размерности СИ (их всего шесть штук)",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "55fdd3b4-0fbc-45b3-9434-63bf513fcb19"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "01be85a2-1c4c-4610-be85-be1f5cd2656e"
+          },
+          {
+            "name": "short_name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.64990234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6671379d-75a9-4483-9b7a-874f075b1c88"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 78.3338,
+          "top": 504.167,
+          "zIndex": 184,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "9d52bfd1-36ad-4e03-b6ec-f555cddd4e26"
+      },
+      {
+        "name": "Si_all",
+        "comment": "Все размерности СИ",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ab6b1722-8d55-4c77-ab7c-a3ede629cf81"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fb7808e0-0383-4ac3-bf46-703bb9197d9c"
+          },
+          {
+            "name": "short_naME",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.0908203125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "317c9f06-121c-412f-bfdf-27f80f4b7a18"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 76.6664,
+          "top": 137.5,
+          "zIndex": 185,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "8c075805-e29c-4df0-826f-08c8d8b26474"
+      },
+      {
+        "name": "Complex_si",
+        "comment": "Группы размерностей для комплексных велечин (плотность, паскаль и т.д.)",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "10de0379-79ae-4d10-b2f2-7e7c4a837d30"
+          },
+          {
+            "name": "base_si_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 64.15625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "09e249e5-2ec1-4b4f-b840-28900f43bb9c"
+          },
+          {
+            "name": "s_all_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ea95e554-8789-44c9-9835-1759a000db79"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 80.8334,
+          "top": 324.166,
+          "zIndex": 180,
+          "widthName": 69.91357421875,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "a401f649-fccc-478e-ad48-a3f9ebdff912"
+      },
+      {
+        "name": "well workover operation_mesears",
+        "comment": "Капитальный ремонт скважины (КРС)",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "74b4d7e6-274b-41e3-9e67-72f2f8bb8d77"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "07d489ea-a163-467f-8899-93c0cfdcc7c1"
+          },
+          {
+            "name": "meser_type_id",
+            "comment": "название компанента метрики",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 87.26806640625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "05c51439-1221-4e0b-ab14-6812d5b02ad2"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 834.9999,
+          "top": 107.4998,
+          "zIndex": 278,
+          "widthName": 195.6416015625,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "9774df33-7b1b-42c5-9698-4bba2f516212"
+      },
+      {
+        "name": "Geological well test",
+        "comment": "Геологические исследование скважины (ГИС)",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0f5ebde3-52a9-4202-9a92-a7efa6e9740b"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e9ec08a5-a84a-4322-b4c4-4adf89291069"
+          },
+          {
+            "name": "meser_type_id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 87.26806640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b6501c37-7e36-4373-8c6d-93b9971665fa"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 882.9165,
+          "top": 514.1668,
+          "zIndex": 276,
+          "widthName": 113.998046875,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "32f220b2-ae2c-4438-9c87-619868e1ab37"
+      },
+      {
+        "name": "well_workover_operaation_values",
+        "comment": "Вектора КРСов",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "295fa993-d5b3-4bab-90e2-e7111e7d0884"
+          },
+          {
+            "name": "value",
+            "comment": "значение компонента метрики",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "41ea7769-8833-406d-8881-97779550e117"
+          },
+          {
+            "name": "meser_type_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 90.14990234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8657b689-29dd-43c0-9691-223fe3649f8b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1290.4164,
+          "top": 134.3752,
+          "zIndex": 280,
+          "widthName": 197.837890625,
+          "widthComment": 94.46630859375
+        },
+        "visible": true,
+        "id": "0e8672c0-b0c5-42f9-a33d-04733d3e1977"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9d52bfd1-36ad-4e03-b6ec-f555cddd4e26",
+          "columnIds": [
+            "55fdd3b4-0fbc-45b3-9434-63bf513fcb19"
+          ],
+          "x": 215.658751171875,
+          "y": 504.167,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "a401f649-fccc-478e-ad48-a3f9ebdff912",
+          "columnIds": [
+            "09e249e5-2ec1-4b4f-b840-28900f43bb9c"
+          ],
+          "x": 214.91152499999998,
+          "y": 454.666,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_si_base_to_complex_si",
+        "visible": true,
+        "id": "6f4f5cfb-2fbc-488e-986e-68adfb3e2822"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8c075805-e29c-4df0-826f-08c8d8b26474",
+          "columnIds": [
+            "ab6b1722-8d55-4c77-ab7c-a3ede629cf81"
+          ],
+          "x": 214.71181015625,
+          "y": 268,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "a401f649-fccc-478e-ad48-a3f9ebdff912",
+          "columnIds": [
+            "ea95e554-8789-44c9-9835-1759a000db79"
+          ],
+          "x": 214.91152499999998,
+          "y": 324.166,
+          "direction": "top"
+        },
+        "constraintName": "fk_si_all_to_complex_si",
+        "visible": true,
+        "id": "6c07e6f2-9e66-4c25-896f-7dce44125bc5"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8c075805-e29c-4df0-826f-08c8d8b26474",
+          "columnIds": [
+            "ab6b1722-8d55-4c77-ab7c-a3ede629cf81"
+          ],
+          "x": 352.7572203125,
+          "y": 202.75,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "0bbda8be-9502-4fb1-8f09-273d025c3db1",
+          "columnIds": [
+            "0596be0f-bcee-454a-a87c-3759a1d05143"
+          ],
+          "x": 472.7077,
+          "y": 355.0414,
+          "direction": "left"
+        },
+        "constraintName": "fk_si_all_to_mesers_type",
+        "visible": true,
+        "id": "cc62d2c6-c694-406c-b6d0-b08bf5ae6d04"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0bbda8be-9502-4fb1-8f09-273d025c3db1",
+          "columnIds": [
+            "63424876-2e7c-4f96-8eca-8a742f260023"
+          ],
+          "x": 736.7076999999999,
+          "y": 322.4164,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "9774df33-7b1b-42c5-9698-4bba2f516212",
+          "columnIds": [
+            "05c51439-1221-4e0b-ab14-6812d5b02ad2"
+          ],
+          "x": 834.9999,
+          "y": 172.7498,
+          "direction": "left"
+        },
+        "constraintName": "fk_mesers_type_to_well workover operation",
+        "visible": true,
+        "id": "65816ab8-0007-4fcb-a7c5-d6421ce93140"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0bbda8be-9502-4fb1-8f09-273d025c3db1",
+          "columnIds": [
+            "63424876-2e7c-4f96-8eca-8a742f260023"
+          ],
+          "x": 736.7076999999999,
+          "y": 387.6664,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "32f220b2-ae2c-4438-9c87-619868e1ab37",
+          "columnIds": [
+            "b6501c37-7e36-4373-8c6d-93b9971665fa"
+          ],
+          "x": 882.9165,
+          "y": 579.4168,
+          "direction": "left"
+        },
+        "constraintName": "fk_mesers_type_to_geologicak well test",
+        "visible": true,
+        "id": "10ea503d-260b-4fa1-a1a1-ca31cdcce6d6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9774df33-7b1b-42c5-9698-4bba2f516212",
+          "columnIds": [
+            "74b4d7e6-274b-41e3-9e67-72f2f8bb8d77"
+          ],
+          "x": 1186.26796640625,
+          "y": 172.7498,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "0e8672c0-b0c5-42f9-a33d-04733d3e1977",
+          "columnIds": [
+            "8657b689-29dd-43c0-9691-223fe3649f8b"
+          ],
+          "x": 1290.4164,
+          "y": 199.6252,
+          "direction": "left"
+        },
+        "constraintName": "fk_well workover operation_mesears_to_well_workover_operaation_values",
+        "visible": true,
+        "id": "30b3b6f2-10f7-4f29-b175-0a2ce1fd53aa"
+      }
+    ]
+  }
+}

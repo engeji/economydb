@@ -1,0 +1,10 @@
+digraph g {
+graph [
+rankdir = "LR"
+];
+
+"node0" [ label = "FIELD|<f1>id|name" shape = "record"];
+"node1" [ label = "FIELD|id|<f2>name" shape = "record"];
+// "node0" :f1 -> "node1":f2
+
+}

@@ -1,0 +1,98 @@
+digraph root {
+    fontname="Arial"
+    edge [dir=none]
+    // graph [center=1 rankdir=LR]
+    node [width=2.5 height=2.5]
+    main_1 [label="Наполнение базы прогнозов" shape="box" color=darkviolet]
+    main_2 [label="Выбор\nотложения" shape="pentagon"]
+    main_3 [label="Выбор\nисторических\nгдм моделей" shape="pentagon"]
+    main_4 [label="Выбор\nмероприятий" shape="pentagon"]
+    main_5 [label="Загрузка\nшаблонов c показателями:\n-по отложениям\n-кпр-\n-обучющяя выборка" color=darkviolet]
+
+    main_1 -> main_2 [color=darkviolet]
+    main_2 -> main_3 [color=darkviolet]
+    //если исторической модели нет
+    main_3 -> hist_1 [color="orange:darkviolet"]
+    hist_1 -> hist_2 [color="orange:darkviolet"]
+    hist_2 -> hist_3 [color="orange:darkviolet"]
+    hist_3 -> main_4 [color="orange:darkviolet"]
+    //
+    main_3 -> main_4 [color=darkviolet]
+    //если нет мероприятия
+    main_4 -> event_1 [color="darkviolet:blue"]
+    event_1 -> event_2 [color="darkviolet:blue"]
+    event_2 -> event_3 [color="darkviolet:blue"]
+    event_3 -> main_5 [color="darkviolet:blue"]
+    //
+    main_4 -> main_5 [color=darkviolet]
+
+
+    
+    hist_0 [label = "Создание\nисторических\nмоделей" color=orange]
+    hist_1 [label = "Web форма\nдля исторических\nмоеделей" color=orange]
+    hist_2 [label = "Выбор\nгеологической\nмодели" color=orange]
+    hist_3 [label = "Запись\nв базу\nисторических\nмоделей" color=orange]
+
+    hist_0 -> hist_1 [color="orange"]
+    hist_1 -> main_2 [color="orange"]
+    main_2 -> hist_2  [color="orange"]
+    //если геологических моделей нет
+    hist_2 -> geo_1 [color="orange:green"]
+    geo_1 -> geo_2 [color="orange:green"]
+    geo_2 -> geo_3 [color="orange:green"]
+    geo_3 -> hist_3 [color="orange:green"]
+
+    geo_0 [label = "Создание\nгелогических\nмоделей" color=green]
+    geo_1 [label = "Web форма\nдля геологических\nмоеделей" color=green]
+    geo_2 [label = "Загрузка шаблонов\nc запасами по объектам" color=green]
+    geo_3 [label = "Запись в базу\nгелогических моделей" color=green]
+
+    geo_0 -> main_2  [color="green"]
+    main_2 -> geo_1 [color="green"]
+    main_2 ->geo_2  [color="green"]
+    //если нет объекта разработки
+    geo_2 -> obj_1
+    obj_1 -> obj_2
+    obj_2 -> obj_3
+    obj_3 -> geo_2
+    //
+    geo_2 -> geo_3  [color="green"] 
+
+    event_0 [label = "Создание\nмероприятия" color=blue]
+    event_1 [label = "Выбор\nобъекта\nинфроструктуры" color=blue]
+    event_2 [label = "Web форма\nдля выбора\nмероприятия" color=blue]
+    event_3 [label = "Запись\nв базу\nмероприятия" color=blue]
+    
+    event_0 -> event_1[color="blue"]
+    event_1 -> main_2 [color="blue"]
+    main_2 ->  event_2[color="blue"]
+    //если нет объекта инфроструктуры
+    event_2 -> infr_1 [color="red:blue"]
+    infr_1 -> infr_2 [color="red:blue"]
+    infr_2 -> infr_3 [color="red:blue"]
+    infr_3 -> event_3 [color="red:blue"]
+    //
+
+    event_2 -> event_3[color="blue"] 
+
+    infr_0 [label = "Создание\nобъекта\nинфроструктуры " color=red]
+    infr_1 [label = "Web форма\nдля объектов\nинфроструктуры" color=red]
+    infr_2 [label="Загрузка шаблонов\nc объектами\nинфроструктуры" color=red ]
+    infr_3 [label = "Запись\в базу\nобъекта\nинфроструктуры " color=red]
+    
+    infr_0 -> infr_1 [color="red"]
+    infr_1 -> main_2 [color="red"]
+    main_2 -> infr_2 [color="red"]
+    infr_2 -> infr_3 [color="red"]
+    
+    obj_0 [label = "Создание\nобъекта\nразработки " color=brown]
+    obj_1 [label = "Web форма\nдля объектов\nразработки" color=brown]
+    obj_2 [label="Загрузка шаблонов\nc объектами\nразработки" color=brown]
+    obj_3 [label = "Запись\в базу\nобъекта\nразработки" color=brown]
+
+    obj_0 -> obj_1 [color="brown"]
+    obj_1 -> main_2 [color="brown"]
+    main_2 -> obj_2 [color="brown"]
+    obj_2 -> obj_3 [color="brown"]
+}
+
