@@ -1,0 +1,19 @@
+digraph root{  
+  node [width=2 height=1.4 shape=box]
+  rankdir=LR
+  
+  begin [label="Начало адаптации\nпродуктивности\nскважин"]
+  import [label="Загрузка\nрежимов работы\nв schedule\nсекцию"]
+  calc_gdm [label="Расчет\nисторического периода\n(только те даты,\nгде есть\n\исследования)"]
+  validation [label="Проверка всех\nскважинна\nкачество настройки"]
+  calc_mult [label="Расчет множителей\nWPImult и WDEFAC"]
+  clear_schedule [label="Очистка schedule\nсекции\nот исследований"]
+  end [label="Конец адаптации\nпродуктивности\nскважин"]
+  begin -> import
+  import -> calc_gdm
+  calc_gdm -> validation
+  validation -> calc_mult [label="Не достаточная\nточность"]
+  calc_mult -> calc_gdm [label="Новая итерация"]
+  validation -> clear_schedule [label="Достаточная\nточность"]
+  clear_schedule -> end
+}

@@ -1,7 +1,7 @@
 digraph root {
     fontname="Arial"
     edge [dir=none]
-    // graph [center=1 rankdir=LR]
+    graph [center=1 rankdir=LR]
     node [width=2.5 height=2.5]
     main_1 [label="Наполнение базы прогнозов" shape="box" color=darkviolet]
     main_2 [label="Выбор\nотложения" shape="pentagon"]

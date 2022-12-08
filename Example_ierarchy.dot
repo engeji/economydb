@@ -1,0 +1,52 @@
+digraph root{
+    uoub [shape="box"]
+    uoub ->cdks 
+    yamsov -> cdks
+    ukpg_1 ->  cdks
+    ukpg_2 ->  cdks
+    ukpg_3 ->  cdks
+    ukpg_4 ->  cdks
+    ukpg_5 ->  cdks
+    ukpg_6 ->  cdks
+    ukpg_n ->  cdks
+    rankdir = LR
+    // layout=neato
+    // layout=twopi
+    ranksep=1
+    subgraph cluster_00{
+        label="Медвежье месторождение"
+        
+        well_1 -> ukpg_1
+        well_2 -> ukpg_2
+        well_3 -> ukpg_3
+        well_4 -> ukpg_4
+        well_5 -> ukpg_5
+        well_6 -> ukpg_6
+        well_7 -> ukpg_1
+        well_8 -> ukpg_2
+        well_9 -> ukpg_3
+        well_10 -> ukpg_4
+        well_11 -> ukpg_5
+        well_12 -> ukpg_6
+        ranksep=3
+        {well13 well14} -> ukpg_n
+
+        subgraph  cluster0 {
+            label="Сеноманские отложения"
+            well_1 well_2 well_3 well_4 well_5 well_6 well_7 well_8 well_9 well_10 well_11 well_12
+        }
+        subgraph  cluster1 {
+            label="Неокомские отложения"
+            well14
+            well13
+        }
+        subgraph  cluster2 {
+            label="Сеноманский промысел" ukpg_1 ukpg_2 ukpg_3 ukpg_4 ukpg_5 ukpg_6
+        }
+        subgraph  cluster3 {
+            label="Ныденский участок"
+            ukpg_n
+        }
+    }
+
+ }
