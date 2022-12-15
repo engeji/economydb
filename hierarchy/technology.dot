@@ -1,0 +1,19 @@
+digraph root{ 
+    {pipe1 pipe2} -> zpa
+    zpa -> sepr
+    sepr -> stage1 
+    stage1 -> stage2
+    stage2 -> nts
+    nts -> stage3
+    stage3 ->avo
+    avo -> magistral
+
+    subgraph cluster_dks1{
+        stage1 stage2 
+    }
+    subgraph cluster_dks2{
+        stage3 
+    }
+    stage1 [shape=record]
+    
+}

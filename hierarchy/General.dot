@@ -1,0 +1,102 @@
+digraph root{  
+    // rankdir=LR
+        // layout=neato
+    // layout=twopi    
+        rankdir=BT
+    // node [regular=true]
+    // {pipe11 pipe22 pipe21 rank=same}
+    // {res_1 res_2 res_3 rank=same}
+    // 
+    // 
+    {field1 field2 field3 field5 ie8 rank=max}    
+
+
+    res_4 -> w_411
+    res_1:a1 -> w_111
+    res_1:a1 -> w_112 
+    res_1:a2 -> w_121 
+    res_2 -> {w_221 w_211}
+    res_3 -> {w_221 w_121}
+
+
+
+    {w_111 w_112}-> clus11
+    {w_121 }-> clus12
+    w_221 -> clus22
+    w_211 -> clus21
+    w_411 -> clus41
+
+    {clus11 clus12} -> pipe11
+    clus22 -> pipe22
+    clus21 -> pipe21
+    clus41 -> pipe41
+    
+
+    pipe11 -> dks1
+    pipe22 -> dks2
+    pipe21 -> sprtr2 
+    pipe41 -> sprtr4
+
+    sprtr2 -> dks2 [constraint=false]
+    sprtr4 -> dks4 [constraint=false]
+    {sprtr2 sprtr4} -> out_cond
+    
+    {dks1 dks2} -> large_pipe3
+    dks4 -> large_pipe4
+    large_pipe4 -> magistral
+
+    large_pipe3 -> cdks
+    {field2 field3} -> cdks
+    field1 -> dks1
+    field5 -> magistral
+    
+    cdks -> magistral [constraint=false]
+    subgraph cluster_deposit {
+        subgraph cluster_form1 {
+            res_1 
+            label="Пласт1"
+        }        
+        subgraph cluster_for2 {
+            res_3 res_2 res_4
+            label="Пласт2"
+        }
+    }
+    subgraph cluster_ukpg_1{
+        label="УКПГ-1"
+        dks1
+    }
+    subgraph cluster_ukgp2 {
+        label="УКПГ-Н"
+        sprtr2
+        dks2
+    }
+    subgraph cluster_uppg99 {
+        label="УППГ-99"
+        sprtr4
+    }
+    subgraph cluster_ukpg199 {
+        label="УКПГ-199"
+        dks4
+    }
+        // {w_111 w_112 w_121 w_211 w_221 w_411 ie2 rank=same}
+        // cdks
+        // large_pipe3 large_pipe4
+        // pipe11 pipe21 pipe22 pipe41
+        // clus11 clus12 clus21 clus21 clus22 clus41
+    // {out_cond magistral cdks ie7 rank=same}
+    res_1 [shape=Mrecord label="{{<a2>Площадь1|<a1>Площадь2}|Залежь1}"]   
+    res_2 [shape=Mrecord label="Залежь2"]   
+    res_3 [shape=Mrecord label="Залежь3"]   
+    res_4 [shape=Mrecord label="Залежь4"]   
+
+    ie1 -> ie2 -> ie3 -> ie4 -> ie5 -> ie6 -> ie7 
+    ie8 -> ie7    
+    ie1 [label="Недра" shape=none]
+    ie2 [label="Скважины" shape=none]
+    ie3 [label="Кусты" shape=none]
+    ie4 [label="Коллектор" shape=none]
+    ie5 [label="Система подготовки" shape=none]
+    ie6 [label="МПК" shape=none]
+    ie7 [label="Система транспортировки" shape=none]
+    ie8 [label="Другие месторождения" shape=none]
+}

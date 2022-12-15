@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -0.8333333002196431,
-    "scrollLeft": -336.6666532887357,
+    "scrollTop": -307.49998778104833,
+    "scrollLeft": -732.4999708930654,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
@@ -1795,9 +1795,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 943,
-          "top": 552,
-          "zIndex": 6,
+          "left": 902.2593,
+          "top": 577.0001,
+          "zIndex": 26,
           "widthName": 87.26806640625,
           "widthComment": 120
         },
@@ -2841,7 +2841,7 @@
             "74b4fe20-4b0e-4b13-875a-ca28ff30d876"
           ],
           "x": 1412.9804,
-          "y": 816.9736,
+          "y": 700.4736,
           "direction": "left"
         },
         "end": {
@@ -2996,8 +2996,8 @@
           "columnIds": [
             "fafb4eb4-1b53-497c-9c35-c40cb446cb11"
           ],
-          "x": 1207,
-          "y": 584.625,
+          "x": 1166.2593000000002,
+          "y": 609.6251,
           "direction": "right"
         },
         "end": {
@@ -3006,7 +3006,7 @@
             "401a1214-920f-4421-94b3-819ab9e0ed9f"
           ],
           "x": 1412.9804,
-          "y": 700.4736,
+          "y": 816.9736,
           "direction": "left"
         },
         "constraintName": "fk_reserve_object_to_reserves",
@@ -3031,8 +3031,8 @@
           "columnIds": [
             "1b48dccb-68f9-4452-981c-31e47baf9920"
           ],
-          "x": 1207,
-          "y": 649.875,
+          "x": 1166.2593000000002,
+          "y": 674.8751,
           "direction": "right"
         },
         "constraintName": "fk_formation_to_reserve_object",
