@@ -1,19 +1,36 @@
 digraph root{ 
-    {pipe1 pipe2} -> zpa
-    zpa -> sepr
-    sepr -> stage1 
-    stage1 -> stage2
-    stage2 -> nts
-    nts -> stage3
+    {pipe1 pipe2} -> zpa [color="blue:lightskyblue:green:lightgreen" arrowhead=none]
+    zpa -> sepr [color="blue:lightskyblue:green:lightgreen" arrowhead=none]
+    sepr -> out_water [color="blue" arrowhead=none weight=0.1 ]
+    sepr -> stage1:g1 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    sepr -> stage1:g2 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    sepr -> stage1:g3 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    stage1:g1 -> AVO1 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    stage1:g2 -> AVO1 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    stage1:g3 -> AVO1 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    AVO1 -> stage2:g4 [color="lightskyblue:green:lightgreen" arrowhead=none]
+    AVO1 -> stage2:g5 [color="lightskyblue:green:lightgreen" arrowhead=none]
+
+    stage2:g4 -> nts [color="lightskyblue:green:lightgreen" arrowhead=none]
+    stage2:g5 -> nts [color="lightskyblue:green:lightgreen" arrowhead=none]
+    nts -> out_cond [color="green:lightgreen" arrowhead=none]
+    nts -> stage3 [color="lightskyblue" arrowhead=none weight=10]
     stage3 ->avo
     avo -> magistral
 
     subgraph cluster_dks1{
-        stage1 stage2 
+        label="ДКС1"
+        stage1 stage2 AVO1
     }
     subgraph cluster_dks2{
         stage3 
     }
-    stage1 [shape=record]
+    zpa [label="Запирающая\nарматура"]
+    sepr [label="Первичный\nсепаратор"]
+    out_water [label="Выход\nконенсационной/пластовой\nводы"]
+    stage1 [shape=record label="{{<g1>ГПА1|<g2>ГПА2|<g3>ГПА3}}"]
+    AVO1 [label="Автомат\nвоздушного\nохлаждения"]
+    stage2 [shape=record label="{{<g4>ГПА1|<g5>ГПА2}}"]
+    nts [label="Установка\nнизкотемпературной\nсепарации"]
     
 }

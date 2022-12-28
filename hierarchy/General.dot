@@ -51,15 +51,24 @@ digraph root{
     field5 -> magistral
     
     cdks -> magistral [constraint=false]
-    subgraph cluster_deposit {
+    subgraph cluster_deposit1 {
+        label="Объект разработки1"
         subgraph cluster_form1 {
             res_1 
             label="Пласт1"
-        }        
-        subgraph cluster_for2 {
-            res_3 res_2 res_4
+        }   
+        subgraph cluster_form2 {
+            res_2 res_4
             label="Пласт2"
         }
+    }
+    subgraph cluster_deposit2 {
+        label="Объект разработки2"
+        subgraph cluster_form3 {
+            res_3 
+            label="Пласт3"
+        }    
+    
     }
     subgraph cluster_ukpg_1{
         label="УКПГ-1"
@@ -96,7 +105,7 @@ digraph root{
     ie3 [label="Кусты" shape=none]
     ie4 [label="Коллектор" shape=none]
     ie5 [label="Система подготовки" shape=none]
-    ie6 [label="МПК" shape=none]
-    ie7 [label="Система транспортировки" shape=none]
+    ie6 [label="Меж промысловый\nколлектор" shape=none]
+    ie7 [label="Система\nтранспортировки" shape=none]
     ie8 [label="Другие месторождения" shape=none]
 }
