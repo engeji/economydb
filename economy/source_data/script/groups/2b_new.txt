@@ -1,0 +1,12 @@
+name = FIELD2N
+object = all
+res_gas = 1
+res_oil = 1
+plast_rate = 3.723737053
+plast_total = 26.64560981 
+dry_rate = 3.663492779
+dry_total = 26.21470428
+oil_total = 2262.00
+oil_rate = 320.796875
+gas_sep_rate = 3.645570085
+nestab_cond = 515.701705

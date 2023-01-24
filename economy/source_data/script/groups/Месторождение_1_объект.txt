@@ -1,0 +1,12 @@
+name = FIELD
+object = I
+res_gas = 1
+res_oil = 1
+plast_rate = 1.946
+plast_total = 72.548
+dry_rate = 1.913
+dry_total = 71.323
+oil_total = 6037.276
+oil_rate = 116.68
+gas_sep_rate = 1.910
+nestab_cond = 187.606
